@@ -1,0 +1,145 @@
+body{
+  background-color: hsl(229,57%,11%);
+  text-align:center;
+  font-size:14px;
+  font-family: 'Raleway', sans-serif;
+  width:100vw;
+  color:black;
+  color:hsl(243deg 100% 93%);
+  margin:50%;
+}
+  /*To center wrapper at the center of the screen*/
+  .center{
+    position:absolute;
+     top:50%;
+     left:50%;
+     right:50%;
+     transform: translate(-50%,-50%);
+  }
+    /* content wrapper */
+.wrapper{
+  height:194px;
+  width:920px;
+  /* background-color:pink; */
+}
+    /*wrapper->info*/
+.info{
+  border-radius:20px 100px 20px 20px;
+  text-align:left;
+  left:0;
+  height:auto;
+  width:283px;
+  padding:35px;
+  background-color:rgb(29 44 103);
+}
+  
+.info .logo{
+  display:block;
+  margin-bottom:30px;
+}
+
+.info .icons{
+  display: grid;
+  grid-template-columns: 50px 50px 50px;
+  grid-column-gap:15px;
+  align-items:center;
+}
+
+.info .icons .icon{
+  border-radius:5px;
+  display:flex;
+  background-color:rgb(12 18 44);
+  justify-content: center;
+  align-items: center;
+  height:50px;
+}
+
+
+/* wrapper -> data */
+.data{
+  position: absolute;
+  bottom:0;
+  right:0;
+  display:inline-block;
+  border-radius:20px 20px 20px 20px;
+  background-color:rgb(29 44 103);
+  padding-bottom:0;
+  padding:35px;
+  height:auto;
+  width:450px;
+}
+
+.data .range{
+  font-size:12px;
+  margin-top:5px;
+  display: flex;
+  justify-content:space-between;
+}
+
+.data .data-progress-bar{
+  width:100%;
+  height:20px;
+  padding:3px;
+  border-radius:10px;
+  background-color:hsl(229,57%,11%);
+}
+.data-progress-bar .data-progress{
+  position:relative;
+  border-radius:8px;
+  width:75%;
+  height:100%;
+  background-image:linear-gradient(to right,hsl(6deg 100% 80%),hsl(335deg 100% 65%));
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    animation-name: progress;
+}
+
+@keyframes progress{
+  0%{
+    width:0%;
+  }
+  100%{
+    width:75%;
+  }
+}
+
+.data-info{
+  text-align:left;
+}
+.data .storage{
+  position:absolute;
+  border-radius:8px;
+  background-color:white;
+  left:50%;
+  width:179px;
+  height:73px;
+
+  bottom: auto;
+  top: 0;
+  right: 35px;
+  left: auto;
+  transform: translateY(-50%);
+  border-bottom-right-radius: 0;
+
+  color:hsl(229,57%,11%);
+  font-size:35px;
+  font-weight: 700;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+}
+.animation{
+  animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    animation-name: progress;
+}
